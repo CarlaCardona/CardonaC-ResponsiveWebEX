@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, nav {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* skip navigation links css */
+
+.skip-navigation {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background: #000;
+    padding: 0.5rem 1rem;
+    z-index: 100;
+}
+
+.skip-navigation:focus {
+    top: 0;
+}
+
+/* nav css */
+
+.nav__checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nav__checkbox:checked ~ .nav__group--right .nav__links {
+    display: flex;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav__group {
+    display: flex;
+    align-items: center;
+}
+
+.nav__links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+}
+
+/* hero section css */
+
+.hero {
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 25rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+.hero__container {
+    background-color: rgb(197 205 178 / 0.85);
+    padding: 1.5rem;
+    width: 100%;
+}
+
+/*cards wrapper section */
+
+.cards-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+}
+
+/* large pizza with tippings section */
+
+.ad {
+    position: relative;
+}
+
+.ad__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* map */
+
+
+
+/* our locations section */
+
+/* footer */
+
+.footer {
+    background-color: #000;
+    color: #868686;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+
+/* visibility */
+
+.visibility-none {
+    display: none;
+}
+
+.visibility-block {
+    display: block;
+}
+
+.visibility-flex {
+    display: flex;
+}
